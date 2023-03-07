@@ -20,15 +20,9 @@ After required quantity of sand, cement and water are fed in the mixture vessel.
 water are taken out of mixture vessel and ready to receive fresh intake of cement, sand and water in
 the mixture vessel. Repeat the process.
 
-Projects, using PIC16F887, are included with Design, development, implemented, simulated and tested, by using a simulator are as follows :
-===========================================================================================================================================
- 1: smart milk vending machine. 
- 2: Simple Digital Single phase Electric Motor Controller controlled by Electric current.
- 3: Simple Digital Single phase Electric Motor Controller controlled by Electric Voltage.
- 4: Soil moisture based Water spraying system for nursery farms.
- 5: Traffic density congestion control based traffic signal controller.
- 6: Construction automation for mixing of cement, sand and water in the construction mixture equipment. 
- 7: In LCD, running text is displayed either to left or to right with specified number of gaps between consecutive same text display.
+CAUTION:
+========
+Schematics and simulation is done by Proteus CAD. NOT EXPERIMENTED IN REAL TIME ENVIRONMENT.
 
 Purpose :
 =========
