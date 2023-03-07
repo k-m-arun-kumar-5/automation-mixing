@@ -1,0 +1,407 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 6 ]
+"283 F:\ARUN\PIC codes\6adc\adc7\adc7.X\adc7.c
+[v _main main `(v  1 e 1 0 ]
+"318
+[v _Reset_Process Reset_Process `(v  1 e 1 0 ]
+"349
+[v _Mix_Fsm_Proc Mix_Fsm_Proc `(v  1 e 1 0 ]
+"583
+[v _Cur_Stage_Time_Run_Proc Cur_Stage_Time_Run_Proc `(v  1 e 1 0 ]
+"612
+[v _Cur_Stage_Time_Proc Cur_Stage_Time_Proc `(v  1 e 1 0 ]
+"660
+[v _Init_ADC_Channel Init_ADC_Channel `(v  1 e 1 0 ]
+"668
+[v _Read_ADC_Channel Read_ADC_Channel `(ul  1 e 4 0 ]
+"714
+[v _Encoded_To_Actual_Analog_Val_Calc Encoded_To_Actual_Analog_Val_Calc `(v  1 e 1 0 ]
+"735
+[v _Encoded_To_Percent_Calc Encoded_To_Percent_Calc `(v  1 e 1 0 ]
+"757
+[v _Run_Timer1 Run_Timer1 `(v  1 e 1 0 ]
+"796
+[v _Stop_Timer1 Stop_Timer1 `(v  1 e 1 0 ]
+"817
+[v _Prescale_Timer1 Prescale_Timer1 `(v  1 e 1 0 ]
+"843
+[v _Goto_XY_LCD_Disp Goto_XY_LCD_Disp `(v  1 e 1 0 ]
+"876
+[v _LCD_Const_Disp LCD_Const_Disp `(v  1 e 1 0 ]
+"915
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+"940
+[v _Write_LCD_Command Write_LCD_Command `(v  1 e 1 0 ]
+"969
+[v _Write_LCD_Data Write_LCD_Data `(v  1 e 1 0 ]
+"1002
+[v _Data_Str_Disp_LCD Data_Str_Disp_LCD `(v  1 e 1 0 ]
+"1023
+[v _Delay_Time_ByCount Delay_Time_ByCount `(v  1 e 1 0 ]
+"1040
+[v _Data_Num_Disp_LCD Data_Num_Disp_LCD `(v  1 e 1 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"272 F:\ARUN\PIC codes\6adc\adc7\adc7.X\adc7.c
+[v _cur_line_disp_data cur_line_disp_data `[5]ui  1 e 10 0 ]
+"273
+[v _prescale_timer1 prescale_timer1 `ui  1 e 2 0 ]
+[v _prescale_shift_timer1 prescale_shift_timer1 `ui  1 e 2 0 ]
+[v _timer1_mode timer1_mode `ui  1 e 2 0 ]
+"274
+[v _num_calls_timer1 num_calls_timer1 `ul  1 e 4 0 ]
+[v _timer1_init timer1_init `ul  1 e 4 0 ]
+"275
+[v _count_update_cur_stage_per_sec count_update_cur_stage_per_sec `ui  1 e 2 0 ]
+"277
+[v _disp_status_time_or_error disp_status_time_or_error `[4]ui  1 e 8 0 ]
+"279
+[v _cur_disp_lcd_loc cur_disp_lcd_loc `ui  1 e 2 0 ]
+"280
+[v _mix_fsm_state mix_fsm_state `ui  1 e 2 0 ]
+[v _vsl_run_fsm_state vsl_run_fsm_state `ui  1 e 2 0 ]
+"281
+[v _cur_stage_time_left cur_stage_time_left `ui  1 e 2 0 ]
+[v _count_left_vsl_fwd_rev_process count_left_vsl_fwd_rev_process `ui  1 e 2 0 ]
+"282
+[v _restart_sw_enable_flag restart_sw_enable_flag `uc  1 e 1 0 ]
+[v _restart_pressed_flag restart_pressed_flag `uc  1 e 1 0 ]
+[v _cur_stage_time_enable_flag cur_stage_time_enable_flag `uc  1 e 1 0 ]
+[v _cur_stage_time_expiry_flag cur_stage_time_expiry_flag `uc  1 e 1 0 ]
+[v _mix_process_enable_flag mix_process_enable_flag `uc  1 e 1 0 ]
+"164 C:\Program Files (x86)\Microchip\xc8\v1.44\include\pic16f887.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"226
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"288
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"350
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"412
+[v _PORTE PORTE `VEuc  1 e 1 @9 ]
+"655
+[v _TMR1L TMR1L `VEuc  1 e 1 @14 ]
+"662
+[v _TMR1H TMR1H `VEuc  1 e 1 @15 ]
+"669
+[v _T1CON T1CON `VEuc  1 e 1 @16 ]
+"1236
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1243
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+"1414
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1476
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1538
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1600
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1662
+[v _TRISE TRISE `VEuc  1 e 1 @137 ]
+"2968
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2975
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"3385
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3447
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"3782
+[v _GO GO `VEb  1 e 0 @249 ]
+"3920
+[v _RB1 RB1 `VEb  1 e 0 @49 ]
+"3922
+[v _RB2 RB2 `VEb  1 e 0 @50 ]
+"3924
+[v _RB3 RB3 `VEb  1 e 0 @51 ]
+"3926
+[v _RB4 RB4 `VEb  1 e 0 @52 ]
+"3928
+[v _RB5 RB5 `VEb  1 e 0 @53 ]
+"3930
+[v _RB6 RB6 `VEb  1 e 0 @54 ]
+"3932
+[v _RB7 RB7 `VEb  1 e 0 @55 ]
+"3970
+[v _RD0 RD0 `VEb  1 e 0 @64 ]
+"3972
+[v _RD1 RD1 `VEb  1 e 0 @65 ]
+"3974
+[v _RD2 RD2 `VEb  1 e 0 @66 ]
+"3978
+[v _RD4 RD4 `VEb  1 e 0 @68 ]
+"3980
+[v _RD5 RD5 `VEb  1 e 0 @69 ]
+"3982
+[v _RD6 RD6 `VEb  1 e 0 @70 ]
+"3986
+[v _RE0 RE0 `VEb  1 e 0 @72 ]
+"3988
+[v _RE1 RE1 `VEb  1 e 0 @73 ]
+"3990
+[v _RE2 RE2 `VEb  1 e 0 @74 ]
+"4068
+[v _T1CKPS0 T1CKPS0 `VEb  1 e 0 @132 ]
+"4070
+[v _T1CKPS1 T1CKPS1 `VEb  1 e 0 @133 ]
+"4098
+[v _TMR1IF TMR1IF `VEb  1 e 0 @96 ]
+"283 F:\ARUN\PIC codes\6adc\adc7\adc7.X\adc7.c
+[v _main main `(v  1 e 1 0 ]
+{
+"317
+} 0
+"318
+[v _Reset_Process Reset_Process `(v  1 e 1 0 ]
+{
+"335
+} 0
+"876
+[v _LCD_Const_Disp LCD_Const_Disp `(v  1 e 1 0 ]
+{
+"878
+[v LCD_Const_Disp@vol_signal_rep_disp vol_signal_rep_disp `DC[5]uc  1 s 5 vol_signal_rep_disp ]
+[v LCD_Const_Disp@reseveriour_msg_disp reseveriour_msg_disp `DC[3]uc  1 s 3 reseveriour_msg_disp ]
+[v LCD_Const_Disp@vessel_msg_disp vessel_msg_disp `DC[3]uc  1 s 3 vessel_msg_disp ]
+"900
+} 0
+"349
+[v _Mix_Fsm_Proc Mix_Fsm_Proc `(v  1 e 1 0 ]
+{
+"351
+[v Mix_Fsm_Proc@analog_val_in_digital_int_vslwater_ch analog_val_in_digital_int_vslwater_ch `ul  1 a 4 52 ]
+[v Mix_Fsm_Proc@analog_val_in_digital_int_vslsand_ch analog_val_in_digital_int_vslsand_ch `ul  1 a 4 48 ]
+[v Mix_Fsm_Proc@analog_val_in_digital_int_vslcmt_ch analog_val_in_digital_int_vslcmt_ch `ul  1 a 4 44 ]
+[v Mix_Fsm_Proc@analog_val_in_digital_frac_vslwater_ch analog_val_in_digital_frac_vslwater_ch `ul  1 a 4 32 ]
+[v Mix_Fsm_Proc@analog_val_in_digital_frac_vslsand_ch analog_val_in_digital_frac_vslsand_ch `ul  1 a 4 28 ]
+[v Mix_Fsm_Proc@analog_val_in_digital_frac_vslcmt_ch analog_val_in_digital_frac_vslcmt_ch `ul  1 a 4 24 ]
+"354
+[v Mix_Fsm_Proc@adc_value_vslwater_ch adc_value_vslwater_ch `ul  1 a 4 20 ]
+[v Mix_Fsm_Proc@adc_value_vslsand_ch adc_value_vslsand_ch `ul  1 a 4 16 ]
+[v Mix_Fsm_Proc@adc_value_vslcmt_ch adc_value_vslcmt_ch `ul  1 a 4 12 ]
+[v Mix_Fsm_Proc@adc_value_rsvwater_ch adc_value_rsvwater_ch `ul  1 a 4 8 ]
+[v Mix_Fsm_Proc@adc_value_rsvsand_ch adc_value_rsvsand_ch `ul  1 a 4 4 ]
+[v Mix_Fsm_Proc@adc_value_rsvcmt_ch adc_value_rsvcmt_ch `ul  1 a 4 0 ]
+"353
+[v Mix_Fsm_Proc@percent_int_rsvwater_ch percent_int_rsvwater_ch `ui  1 a 2 60 ]
+[v Mix_Fsm_Proc@percent_int_rsvsand_ch percent_int_rsvsand_ch `ui  1 a 2 58 ]
+[v Mix_Fsm_Proc@percent_int_rsvcmt_ch percent_int_rsvcmt_ch `ui  1 a 2 56 ]
+[v Mix_Fsm_Proc@percent_frac_rsvwater_ch percent_frac_rsvwater_ch `ui  1 a 2 42 ]
+[v Mix_Fsm_Proc@percent_frac_rsvsand_ch percent_frac_rsvsand_ch `ui  1 a 2 40 ]
+[v Mix_Fsm_Proc@percent_frac_rsvcmt_ch percent_frac_rsvcmt_ch `ui  1 a 2 38 ]
+"355
+[v Mix_Fsm_Proc@adc_channel adc_channel `ui  1 a 2 36 ]
+"569
+} 0
+"757
+[v _Run_Timer1 Run_Timer1 `(v  1 e 1 0 ]
+{
+[v Run_Timer1@set_timer1_mode set_timer1_mode `DCui  1 p 2 13 ]
+"782
+} 0
+"796
+[v _Stop_Timer1 Stop_Timer1 `(v  1 e 1 0 ]
+{
+"803
+} 0
+"817
+[v _Prescale_Timer1 Prescale_Timer1 `(v  1 e 1 0 ]
+{
+"828
+} 0
+"668
+[v _Read_ADC_Channel Read_ADC_Channel `(ul  1 e 4 0 ]
+{
+"671
+[v Read_ADC_Channel@adc_value_channel adc_value_channel `ul  1 a 4 2 ]
+"670
+[v Read_ADC_Channel@adc_value_least_byte adc_value_least_byte `ui  1 a 2 6 ]
+[v Read_ADC_Channel@adc_value_most_byte adc_value_most_byte `ui  1 a 2 0 ]
+"668
+[v Read_ADC_Channel@adc_channel adc_channel `ui  1 p 2 6 ]
+"700
+} 0
+"660
+[v _Init_ADC_Channel Init_ADC_Channel `(v  1 e 1 0 ]
+{
+"662
+[v Init_ADC_Channel@adc_channel_reg adc_channel_reg `ui  1 a 2 4 ]
+"660
+[v Init_ADC_Channel@adc_channel adc_channel `DCui  1 p 2 0 ]
+"667
+} 0
+"1023
+[v _Delay_Time_ByCount Delay_Time_ByCount `(v  1 e 1 0 ]
+{
+[v Delay_Time_ByCount@time_delay time_delay `ui  1 p 2 0 ]
+"1026
+} 0
+"735
+[v _Encoded_To_Percent_Calc Encoded_To_Percent_Calc `(v  1 e 1 0 ]
+{
+"738
+[v Encoded_To_Percent_Calc@temp_percent_int temp_percent_int `ul  1 a 4 23 ]
+"737
+[v Encoded_To_Percent_Calc@remainder_val remainder_val `ui  1 a 2 27 ]
+"735
+[v Encoded_To_Percent_Calc@adc_value adc_value `DCul  1 p 4 13 ]
+[v Encoded_To_Percent_Calc@percent_int percent_int `DC*.4ui  1 p 1 17 ]
+[v Encoded_To_Percent_Calc@percent_frac percent_frac `DC*.4ui  1 p 1 18 ]
+"743
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"714 F:\ARUN\PIC codes\6adc\adc7\adc7.X\adc7.c
+[v _Encoded_To_Actual_Analog_Val_Calc Encoded_To_Actual_Analog_Val_Calc `(v  1 e 1 0 ]
+{
+"717
+[v Encoded_To_Actual_Analog_Val_Calc@remainder_val remainder_val `ul  1 a 4 20 ]
+"714
+[v Encoded_To_Actual_Analog_Val_Calc@adc_value adc_value `DCul  1 p 4 0 ]
+[v Encoded_To_Actual_Analog_Val_Calc@full_scale_input_analog full_scale_input_analog `DCul  1 p 4 4 ]
+[v Encoded_To_Actual_Analog_Val_Calc@min_input_analog min_input_analog `DCui  1 p 2 8 ]
+[v Encoded_To_Actual_Analog_Val_Calc@analog_val_in_digital_int analog_val_in_digital_int `DC*.4ul  1 p 1 10 ]
+[v Encoded_To_Actual_Analog_Val_Calc@analog_val_in_digital_frac analog_val_in_digital_frac `DC*.4ul  1 p 1 11 ]
+"721
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 9 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 0 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 4 ]
+"129
+} 0
+"915 F:\ARUN\PIC codes\6adc\adc7\adc7.X\adc7.c
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+{
+"925
+} 0
+"583
+[v _Cur_Stage_Time_Run_Proc Cur_Stage_Time_Run_Proc `(v  1 e 1 0 ]
+{
+"598
+} 0
+"612
+[v _Cur_Stage_Time_Proc Cur_Stage_Time_Proc `(v  1 e 1 0 ]
+{
+"615
+[v Cur_Stage_Time_Proc@time_msg_disp time_msg_disp `DC[3]uc  1 s 3 time_msg_disp ]
+[v Cur_Stage_Time_Proc@count_msg_disp count_msg_disp `DC[4]uc  1 s 4 count_msg_disp ]
+[v Cur_Stage_Time_Proc@motor_msg_disp motor_msg_disp `DC[5]uc  1 s 5 motor_msg_disp ]
+"656
+} 0
+"843
+[v _Goto_XY_LCD_Disp Goto_XY_LCD_Disp `(v  1 e 1 0 ]
+{
+"848
+[v Goto_XY_LCD_Disp@start_col_lcd start_col_lcd `ui  1 a 2 2 ]
+[v Goto_XY_LCD_Disp@start_line_lcd start_line_lcd `ui  1 a 2 0 ]
+"843
+[v Goto_XY_LCD_Disp@start_line_num start_line_num `DCui  1 p 2 10 ]
+[v Goto_XY_LCD_Disp@start_col_num start_col_num `DCui  1 p 2 12 ]
+"875
+} 0
+"940
+[v _Write_LCD_Command Write_LCD_Command `(v  1 e 1 0 ]
+{
+"942
+[v Write_LCD_Command@time_delay time_delay `ul  1 a 4 6 ]
+"940
+[v Write_LCD_Command@cmd cmd `ui  1 p 2 0 ]
+"955
+} 0
+"1002
+[v _Data_Str_Disp_LCD Data_Str_Disp_LCD `(v  1 e 1 0 ]
+{
+[v Data_Str_Disp_LCD@char_ptr char_ptr `*.24DCuc  1 a 1 wreg ]
+[v Data_Str_Disp_LCD@char_ptr char_ptr `*.24DCuc  1 a 1 wreg ]
+[v Data_Str_Disp_LCD@char_ptr char_ptr `*.24DCuc  1 a 1 10 ]
+"1009
+} 0
+"1040
+[v _Data_Num_Disp_LCD Data_Num_Disp_LCD `(v  1 e 1 0 ]
+{
+"1045
+[v Data_Num_Disp_LCD@hex_data hex_data `[16]uc  1 a 16 23 ]
+"1044
+[v Data_Num_Disp_LCD@num_data num_data `[10]uc  1 a 10 39 ]
+"1043
+[v Data_Num_Disp_LCD@num num `ul  1 a 4 59 ]
+"1042
+[v Data_Num_Disp_LCD@unit_digit unit_digit `ui  1 a 2 57 ]
+[v Data_Num_Disp_LCD@tens_digit tens_digit `ui  1 a 2 55 ]
+[v Data_Num_Disp_LCD@hundreds_digit hundreds_digit `ui  1 a 2 53 ]
+[v Data_Num_Disp_LCD@thousands_digit thousands_digit `ui  1 a 2 51 ]
+[v Data_Num_Disp_LCD@tens_thousand_digit tens_thousand_digit `ui  1 a 2 49 ]
+"1040
+[v Data_Num_Disp_LCD@lcd_datanum_disp_format lcd_datanum_disp_format `DCui  1 p 2 13 ]
+[v Data_Num_Disp_LCD@lcd_disp_data_int lcd_disp_data_int `DCul  1 p 4 15 ]
+"1043
+[v Data_Num_Disp_LCD@F1790 F1790 `[10]uc  1 s 10 F1790 ]
+"1044
+[v Data_Num_Disp_LCD@F1792 F1792 `[16]uc  1 s 16 F1792 ]
+"1089
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+{
+"11
+[v ___llmod@counter counter `uc  1 a 1 9 ]
+"6
+[v ___llmod@divisor divisor `ul  1 p 4 0 ]
+[v ___llmod@dividend dividend `ul  1 p 4 4 ]
+"26
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"11
+[v ___lldiv@quotient quotient `ul  1 a 4 8 ]
+"12
+[v ___lldiv@counter counter `uc  1 a 1 12 ]
+"6
+[v ___lldiv@divisor divisor `ul  1 p 4 0 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 4 ]
+"31
+} 0
+"969 F:\ARUN\PIC codes\6adc\adc7\adc7.X\adc7.c
+[v _Write_LCD_Data Write_LCD_Data `(v  1 e 1 0 ]
+{
+[v Write_LCD_Data@ch ch `DCuc  1 a 1 wreg ]
+"971
+[v Write_LCD_Data@time_delay time_delay `ul  1 a 4 5 ]
+"969
+[v Write_LCD_Data@ch ch `DCuc  1 a 1 wreg ]
+"971
+[v Write_LCD_Data@ch ch `DCuc  1 a 1 4 ]
+"987
+} 0

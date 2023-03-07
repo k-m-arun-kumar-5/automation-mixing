@@ -1,0 +1,1493 @@
+Microchip MPLAB XC8 Compiler V1.44 ()
+
+Linker command line:
+
+-W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v1.44\dat\en_msgs.txt -cs \
+  -h+dist/default/production\adc7.X.production.sym \
+  --cmf=dist/default/production\adc7.X.production.cmf -z -Q16F887 \
+  -oC:\Users\intel\AppData\Local\Temp\s41s.2 \
+  -Mdist/default/production/adc7.X.production.map -E1 -ver=XC8 \
+  -ASTACK=0110h-016fh -pstack=STACK -ACODE=00h-07FFhx4 -ASTRCODE=00h-01FFFh \
+  -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 -AENTRY=00h-0FFhx32 \
+  -ACOMMON=070h-07Fh -ABANK0=020h-06Fh -ABANK1=0A0h-0EFh \
+  -ABANK2=0110h-016Fh -ABANK3=0190h-01EFh \
+  -ARAM=020h-06Fh,0A0h-0EFh,0110h-016Fh,0190h-01EFh \
+  -AABS1=020h-07Fh,0A0h-0EFh,0110h-016Fh,0190h-01EFh -ASFR0=00h-01Fh \
+  -ASFR1=080h-09Fh -ASFR2=0100h-010Fh -ASFR3=0180h-018Fh \
+  -preset_vec=00h,intentry,init,end_init -ppowerup=CODE -pcinit=CODE \
+  -pfunctab=ENTRY -ACONFIG=02007h-02008h -pconfig=CONFIG -DCONFIG=2 \
+  -AIDLOC=02000h-02003h -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/02100h \
+  -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
+  -DENTRY=2 -k C:\Users\intel\AppData\Local\Temp\s41s.obj \
+  dist/default/production\adc7.X.production.obj 
+
+Object code version is 3.11
+
+Machine type is 16F887
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+C:\Users\intel\AppData\Local\Temp\s41s.obj
+                end_init                              0        0        3        0       0
+dist/default/production\adc7.X.production.obj
+                cinit                               7C3      7C3       3D      F86       0
+                text23                                5        5       6C        A       0
+                text22                              9BB      9BB       60     1376       0
+                text21                              920      920       4C     1240       0
+                text20                              DDC      DDC      224     1BB8       0
+                text19                             17A0     17A0       1C     2F40       0
+                text18                              A81      A81       6B     1502       0
+                text17                              96C      96C       4F     12D8       0
+                text16                              120      120       D4      240       0
+                text15                              D2F      D2F       AD     1A5E       0
+                text14                              8A3      8A3       3E     1146       0
+                text13                              8E1      8E1       3F     11C2       0
+                text12                              C85      C85       AA     190A       0
+                text11                             17BC     17BC       21     2F78       0
+                text10                              BE0      BE0       A5     17C0       0
+                text9                              175D     175D        D     2EBA       0
+                text8                              1788     1788       18     2F10       0
+                text7                               A1B      A1B       66     1436       0
+                text6                              17DD     17DD       23     2FBA       0
+                text5                              176A     176A        D     2ED4       0
+                text4                                71       71       AF       E2       0
+                text3                               1F4      1F4      5CF      3E8       0
+                text2                               B5C      B5C       84     16B8       0
+                text1                               86A      86A       39     10D4       0
+                maintext                            AEC      AEC       70     15D8       0
+                cstackBANK0                          20       20       49       20       1
+                cstackCOMMON                         70       70        E       70       1
+                cstackBANK1                          A0       A0       3E       A0       1
+                clrtext                            1755     1755        8     2EAA       0
+                inittext                           1777     1777       11     2EEE       0
+                dataBANK3                           190      190       2C      190       1
+                bssBANK3                            1BC      1BC        A      190       1
+                dataBANK1                            EB       EB        4       A0       1
+                bssBANK1                             DE       DE        D       A0       1
+                dataBANK0                            69       69        4       20       1
+                strings                             800      800       37     1000       0
+                idataBANK3                          83E      83E       2C     107C       0
+                idataBANK1                         1751     1751        4     2EA2       0
+                idataBANK0                          83A      83A        4     1074       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   STACK          
+
+        CLASS   CODE           
+                end_init                              0        0        3         0
+                cinit                               7C3      7C3       3D         0
+                text23                                5        5       6C         0
+                text22                              9BB      9BB       60         0
+                text21                              920      920       4C         0
+                text20                              DDC      DDC      224         0
+                text19                             17A0     17A0       1C         0
+                text18                              A81      A81       6B         0
+                text17                              96C      96C       4F         0
+                text16                              120      120       D4         0
+                text15                              D2F      D2F       AD         0
+                text14                              8A3      8A3       3E         0
+                text13                              8E1      8E1       3F         0
+                text12                              C85      C85       AA         0
+                text11                             17BC     17BC       21         0
+                text10                              BE0      BE0       A5         0
+                text9                              175D     175D        D         0
+                text8                              1788     1788       18         0
+                text7                               A1B      A1B       66         0
+                text6                              17DD     17DD       23         0
+                text5                              176A     176A        D         0
+                text4                                71       71       AF         0
+                text3                               1F4      1F4      5CF         0
+                text2                               B5C      B5C       84         0
+                text1                               86A      86A       39         0
+                maintext                            AEC      AEC       70         0
+                clrtext                            1755     1755        8         0
+                inittext                           1777     1777       11         0
+                idataBANK3                          83E      83E       2C         0
+                idataBANK1                         1751     1751        4         0
+                idataBANK0                          83A      83A        4         0
+
+        CLASS   STRCODE        
+
+        CLASS   STRING         
+                strings                             800      800       37         0
+
+        CLASS   CONST          
+
+        CLASS   ENTRY          
+
+        CLASS   COMMON         
+                cstackCOMMON                         70       70        E         1
+
+        CLASS   BANK0          
+                cstackBANK0                          20       20       49         1
+                dataBANK0                            69       69        4         1
+
+        CLASS   BANK1          
+                cstackBANK1                          A0       A0       3E         1
+                dataBANK1                            EB       EB        4         1
+                bssBANK1                             DE       DE        D         1
+
+        CLASS   BANK2          
+
+        CLASS   BANK3          
+                dataBANK3                           190      190       2C         1
+                bssBANK3                            1BC      1BC        A         1
+
+        CLASS   RAM            
+
+        CLASS   ABS1           
+                abs_s1                               7E       7E        2         1
+
+        CLASS   SFR0           
+
+        CLASS   SFR1           
+
+        CLASS   SFR2           
+
+        CLASS   SFR3           
+
+        CLASS   CONFIG         
+
+        CLASS   IDLOC          
+
+        CLASS   EEDATA         
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
+
+                reset_vec                      000000  000003  000003         0       0  CODE        2
+                text23                         000005  00006C  000071         A       0  CODE        2
+                cstackBANK0                    000020  00004D  00006D        20       1  BANK0       1
+                cstackCOMMON                   000070  00000E  00007E        70       1  COMMON      1
+                cstackBANK1                    0000A0  00004F  0000EF        A0       1  BANK1       1
+                text4                          000071  0000AF  000120        E2       0  CODE        2
+                dataBANK3                      000190  000036  0001C6       190       1  BANK3       1
+                text16                         000120  0000D4  0001F4       240       0  CODE        2
+                text3                          0001F4  0005CF  0007C3       3E8       0  CODE        2
+                cinit                          0007C3  00003D  000800       F86       0  CODE        2
+                strings                        000800  000037  000837      1000       0  STRING      2
+                idataBANK0                     00083A  000004  00083E      1074       0  CODE        2
+                idataBANK3                     00083E  00002C  00086A      107C       0  CODE        2
+                text1                          00086A  000039  0008A3      10D4       0  CODE        2
+                text14                         0008A3  00003E  0008E1      1146       0  CODE        2
+                text13                         0008E1  00003F  000920      11C2       0  CODE        2
+                text21                         000920  00004C  00096C      1240       0  CODE        2
+                text17                         00096C  00004F  0009BB      12D8       0  CODE        2
+                text22                         0009BB  000060  000A1B      1376       0  CODE        2
+                text7                          000A1B  000066  000A81      1436       0  CODE        2
+                text18                         000A81  00006B  000AEC      1502       0  CODE        2
+                maintext                       000AEC  000070  000B5C      15D8       0  CODE        2
+                text2                          000B5C  000084  000BE0      16B8       0  CODE        2
+                text10                         000BE0  0000A5  000C85      17C0       0  CODE        2
+                text12                         000C85  0000AA  000D2F      190A       0  CODE        2
+                text15                         000D2F  0000AD  000DDC      1A5E       0  CODE        2
+                text20                         000DDC  000224  001000      1BB8       0  CODE        2
+                idataBANK1                     001751  000004  001755      2EA2       0  CODE        2
+                clrtext                        001755  000008  00175D      2EAA       0  CODE        2
+                text9                          00175D  00000D  00176A      2EBA       0  CODE        2
+                text5                          00176A  00000D  001777      2ED4       0  CODE        2
+                inittext                       001777  000011  001788      2EEE       0  CODE        2
+                text8                          001788  000018  0017A0      2F10       0  CODE        2
+                text19                         0017A0  00001C  0017BC      2F40       0  CODE        2
+                text11                         0017BC  000021  0017DD      2F78       0  CODE        2
+                text6                          0017DD  000023  001800      2FBA       0  CODE        2
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            006D-006F              3           1
+        BANK1            00EF-00EF              1           1
+        BANK2            0110-016F             60           1
+        BANK3            01C6-01EF             2A           1
+        CODE             0003-0004              2           2
+                         0837-0839              3
+                         1000-1750            751
+                         1800-1FFF            800
+        CONFIG           2007-2008              2           2
+        CONST            0003-0004              2           2
+                         0837-0839              3
+                         1000-1750            100
+                         1800-1FFF            100
+        EEDATA           2100-21FF            100           2
+        ENTRY            0003-0004              2           2
+                         0837-0839              3
+                         1000-1750            100
+                         1800-1FFF            100
+        IDLOC            2000-2003              4           2
+        RAM              006D-006F              3           1
+                         00EF-00EF              1
+                         0110-016F             60
+                         01C6-01EF             2A
+        SFR0             0000-001F             20           1
+        SFR1             0080-009F             20           1
+        SFR2             0100-010F             10           1
+        SFR3             0180-018F             10           1
+        STACK            0110-016F             60           1
+        STRCODE          0003-0004              2           2
+                         0837-0839              3
+                         1000-1750            751
+                         1800-1FFF            800
+        STRING           0003-0004              2           2
+                         0837-0839              3
+                         1000-1750            100
+                         1800-1FFF            100
+
+                                  Symbol Table
+
+?_Read_ADC_Channel                                           cstackCOMMON 0076
+?___lldiv                                                    cstackBANK0  0020
+?___llmod                                                    cstackCOMMON 0070
+?___lmul                                                     cstackCOMMON 0070
+?___wmul                                                     cstackCOMMON 0070
+Cur_Stage_Time_Proc@count_msg_disp                           strings      081C
+Cur_Stage_Time_Proc@motor_msg_disp                           strings      0817
+Cur_Stage_Time_Proc@time_msg_disp                            strings      0826
+Data_Num_Disp_LCD@F1790                                      dataBANK3    01A0
+Data_Num_Disp_LCD@F1792                                      dataBANK3    0190
+Data_Num_Disp_LCD@hex_data                                   cstackBANK0  0037
+Data_Num_Disp_LCD@hundreds_digit                             cstackBANK0  0055
+Data_Num_Disp_LCD@lcd_datanum_disp_format                    cstackBANK0  002D
+Data_Num_Disp_LCD@lcd_disp_data_int                          cstackBANK0  002F
+Data_Num_Disp_LCD@num                                        cstackBANK0  005B
+Data_Num_Disp_LCD@num_data                                   cstackBANK0  0047
+Data_Num_Disp_LCD@tens_digit                                 cstackBANK0  0057
+Data_Num_Disp_LCD@tens_thousand_digit                        cstackBANK0  0051
+Data_Num_Disp_LCD@thousands_digit                            cstackBANK0  0053
+Data_Num_Disp_LCD@unit_digit                                 cstackBANK0  0059
+Data_Str_Disp_LCD@char_ptr                                   cstackCOMMON 007A
+Delay_Time_ByCount@time_delay                                cstackCOMMON 0070
+Encoded_To_Actual_Analog_Val_Calc@adc_value                  cstackBANK0  0020
+Encoded_To_Actual_Analog_Val_Calc@analog_val_in_digital_frac cstackBANK0  002B
+Encoded_To_Actual_Analog_Val_Calc@analog_val_in_digital_int  cstackBANK0  002A
+Encoded_To_Actual_Analog_Val_Calc@full_scale_input_analog    cstackBANK0  0024
+Encoded_To_Actual_Analog_Val_Calc@min_input_analog           cstackBANK0  0028
+Encoded_To_Actual_Analog_Val_Calc@remainder_val              cstackBANK0  0034
+Encoded_To_Percent_Calc@adc_value                            cstackBANK0  002D
+Encoded_To_Percent_Calc@percent_frac                         cstackBANK0  0032
+Encoded_To_Percent_Calc@percent_int                          cstackBANK0  0031
+Encoded_To_Percent_Calc@remainder_val                        cstackBANK0  003B
+Encoded_To_Percent_Calc@temp_percent_int                     cstackBANK0  0037
+Goto_XY_LCD_Disp@start_col_lcd                               cstackBANK0  0022
+Goto_XY_LCD_Disp@start_col_num                               cstackCOMMON 007C
+Goto_XY_LCD_Disp@start_line_lcd                              cstackBANK0  0020
+Goto_XY_LCD_Disp@start_line_num                              cstackCOMMON 007A
+Init_ADC_Channel@adc_channel                                 cstackCOMMON 0070
+Init_ADC_Channel@adc_channel_reg                             cstackCOMMON 0074
+LCD_Const_Disp@reseveriour_msg_disp                          strings      0823
+LCD_Const_Disp@vessel_msg_disp                               strings      0820
+LCD_Const_Disp@vol_signal_rep_disp                           strings      0812
+Mix_Fsm_Proc@adc_channel                                     cstackBANK1  00C4
+Mix_Fsm_Proc@adc_value_rsvcmt_ch                             cstackBANK1  00A0
+Mix_Fsm_Proc@adc_value_rsvsand_ch                            cstackBANK1  00A4
+Mix_Fsm_Proc@adc_value_rsvwater_ch                           cstackBANK1  00A8
+Mix_Fsm_Proc@adc_value_vslcmt_ch                             cstackBANK1  00AC
+Mix_Fsm_Proc@adc_value_vslsand_ch                            cstackBANK1  00B0
+Mix_Fsm_Proc@adc_value_vslwater_ch                           cstackBANK1  00B4
+Mix_Fsm_Proc@analog_val_in_digital_frac_vslcmt_ch            cstackBANK1  00B8
+Mix_Fsm_Proc@analog_val_in_digital_frac_vslsand_ch           cstackBANK1  00BC
+Mix_Fsm_Proc@analog_val_in_digital_frac_vslwater_ch          cstackBANK1  00C0
+Mix_Fsm_Proc@analog_val_in_digital_int_vslcmt_ch             cstackBANK1  00CC
+Mix_Fsm_Proc@analog_val_in_digital_int_vslsand_ch            cstackBANK1  00D0
+Mix_Fsm_Proc@analog_val_in_digital_int_vslwater_ch           cstackBANK1  00D4
+Mix_Fsm_Proc@percent_frac_rsvcmt_ch                          cstackBANK1  00C6
+Mix_Fsm_Proc@percent_frac_rsvsand_ch                         cstackBANK1  00C8
+Mix_Fsm_Proc@percent_frac_rsvwater_ch                        cstackBANK1  00CA
+Mix_Fsm_Proc@percent_int_rsvcmt_ch                           cstackBANK1  00D8
+Mix_Fsm_Proc@percent_int_rsvsand_ch                          cstackBANK1  00DA
+Mix_Fsm_Proc@percent_int_rsvwater_ch                         cstackBANK1  00DC
+Read_ADC_Channel@adc_channel                                 cstackCOMMON 0076
+Read_ADC_Channel@adc_value_channel                           cstackBANK0  0022
+Read_ADC_Channel@adc_value_least_byte                        cstackBANK0  0026
+Read_ADC_Channel@adc_value_most_byte                         cstackBANK0  0020
+Run_Timer1@set_timer1_mode                                   cstackBANK0  002D
+Write_LCD_Command@cmd                                        cstackCOMMON 0070
+Write_LCD_Command@time_delay                                 cstackCOMMON 0076
+Write_LCD_Data@ch                                            cstackCOMMON 0074
+Write_LCD_Data@time_delay                                    cstackCOMMON 0075
+_ADCON0                                                      (abs)        001F
+_ADCON1                                                      (abs)        009F
+_ADRESH                                                      (abs)        001E
+_ADRESL                                                      (abs)        009E
+_ANSEL                                                       (abs)        0188
+_ANSELH                                                      (abs)        0189
+_Cur_Stage_Time_Proc                                         text16       0120
+_Cur_Stage_Time_Run_Proc                                     text15       0D2F
+_Data_Num_Disp_LCD                                           text20       0DDC
+_Data_Str_Disp_LCD                                           text19       17A0
+_Delay_Time_ByCount                                          text9        175D
+_Encoded_To_Actual_Analog_Val_Calc                           text12       0C85
+_Encoded_To_Percent_Calc                                     text10       0BE0
+_GO                                                          (abs)        00F9
+_Goto_XY_LCD_Disp                                            text17       096C
+_Init_ADC_Channel                                            text8        1788
+_LCD_Const_Disp                                              text2        0B5C
+_LCD_Init                                                    text14       08A3
+_Mix_Fsm_Proc                                                text3        01F4
+_PORTA                                                       (abs)        0005
+_PORTB                                                       (abs)        0006
+_PORTC                                                       (abs)        0007
+_PORTD                                                       (abs)        0008
+_PORTE                                                       (abs)        0009
+_Prescale_Timer1                                             text6        17DD
+_RB1                                                         (abs)        0031
+_RB2                                                         (abs)        0032
+_RB3                                                         (abs)        0033
+_RB4                                                         (abs)        0034
+_RB5                                                         (abs)        0035
+_RB6                                                         (abs)        0036
+_RB7                                                         (abs)        0037
+_RD0                                                         (abs)        0040
+_RD1                                                         (abs)        0041
+_RD2                                                         (abs)        0042
+_RD4                                                         (abs)        0044
+_RD5                                                         (abs)        0045
+_RD6                                                         (abs)        0046
+_RE0                                                         (abs)        0048
+_RE1                                                         (abs)        0049
+_RE2                                                         (abs)        004A
+_Read_ADC_Channel                                            text7        0A1B
+_Reset_Process                                               text1        086A
+_Run_Timer1                                                  text4        0071
+_Stop_Timer1                                                 text5        176A
+_T1CKPS0                                                     (abs)        0084
+_T1CKPS1                                                     (abs)        0085
+_T1CON                                                       (abs)        0010
+_TMR1H                                                       (abs)        000F
+_TMR1IF                                                      (abs)        0060
+_TMR1L                                                       (abs)        000E
+_TRISA                                                       (abs)        0085
+_TRISB                                                       (abs)        0086
+_TRISC                                                       (abs)        0087
+_TRISD                                                       (abs)        0088
+_TRISE                                                       (abs)        0089
+_Write_LCD_Command                                           text18       0A81
+_Write_LCD_Data                                              text23       0005
+__Habs1                                                      abs1         0000
+__Hbank0                                                     bank0        0000
+__Hbank1                                                     bank1        0000
+__Hbank2                                                     bank2        0000
+__Hbank3                                                     bank3        0000
+__HbssBANK1                                                  bssBANK1     0000
+__HbssBANK3                                                  bssBANK3     0000
+__Hcinit                                                     cinit        0800
+__Hclrtext                                                   clrtext      0000
+__Hcode                                                      code         0000
+__Hcommon                                                    common       0000
+__Hconfig                                                    config       0000
+__HcstackBANK0                                               cstackBANK0  0000
+__HcstackBANK1                                               cstackBANK1  0000
+__HcstackCOMMON                                              cstackCOMMON 0000
+__HdataBANK0                                                 dataBANK0    0000
+__HdataBANK1                                                 dataBANK1    0000
+__HdataBANK3                                                 dataBANK3    0000
+__Heeprom_data                                               eeprom_data  0000
+__Hend_init                                                  end_init     0003
+__Hfunctab                                                   functab      0000
+__HidataBANK0                                                idataBANK0   0000
+__HidataBANK1                                                idataBANK1   0000
+__HidataBANK3                                                idataBANK3   0000
+__Hidloc                                                     idloc        0000
+__Hinit                                                      init         0000
+__Hinittext                                                  inittext     0000
+__Hintentry                                                  intentry     0000
+__Hmaintext                                                  maintext     0000
+__Hpowerup                                                   powerup      0000
+__Hram                                                       ram          0000
+__Hreset_vec                                                 reset_vec    0000
+__Hsfr0                                                      sfr0         0000
+__Hsfr1                                                      sfr1         0000
+__Hsfr2                                                      sfr2         0000
+__Hsfr3                                                      sfr3         0000
+__Hspace_0                                                   (abs)        1800
+__Hspace_1                                                   (abs)        01C6
+__Hspace_2                                                   (abs)        0000
+__Hspace_3                                                   (abs)        0000
+__Hstack                                                     stack        0000
+__Hstrings                                                   strings      0000
+__Htext                                                      text         0000
+__Labs1                                                      abs1         0000
+__Lbank0                                                     bank0        0000
+__Lbank1                                                     bank1        0000
+__Lbank2                                                     bank2        0000
+__Lbank3                                                     bank3        0000
+__LbssBANK1                                                  bssBANK1     0000
+__LbssBANK3                                                  bssBANK3     0000
+__Lcinit                                                     cinit        07C3
+__Lclrtext                                                   clrtext      0000
+__Lcode                                                      code         0000
+__Lcommon                                                    common       0000
+__Lconfig                                                    config       0000
+__LcstackBANK0                                               cstackBANK0  0000
+__LcstackBANK1                                               cstackBANK1  0000
+__LcstackCOMMON                                              cstackCOMMON 0000
+__LdataBANK0                                                 dataBANK0    0000
+__LdataBANK1                                                 dataBANK1    0000
+__LdataBANK3                                                 dataBANK3    0000
+__Leeprom_data                                               eeprom_data  0000
+__Lend_init                                                  end_init     0000
+__Lfunctab                                                   functab      0000
+__LidataBANK0                                                idataBANK0   0000
+__LidataBANK1                                                idataBANK1   0000
+__LidataBANK3                                                idataBANK3   0000
+__Lidloc                                                     idloc        0000
+__Linit                                                      init         0000
+__Linittext                                                  inittext     0000
+__Lintentry                                                  intentry     0000
+__Lmaintext                                                  maintext     0000
+__Lpowerup                                                   powerup      0000
+__Lram                                                       ram          0000
+__Lreset_vec                                                 reset_vec    0000
+__Lsfr0                                                      sfr0         0000
+__Lsfr1                                                      sfr1         0000
+__Lsfr2                                                      sfr2         0000
+__Lsfr3                                                      sfr3         0000
+__Lspace_0                                                   (abs)        0000
+__Lspace_1                                                   (abs)        0000
+__Lspace_2                                                   (abs)        0000
+__Lspace_3                                                   (abs)        0000
+__Lstack                                                     stack        0000
+__Lstrings                                                   strings      0000
+__Ltext                                                      text         0000
+__S0                                                         (abs)        1800
+__S1                                                         (abs)        01C6
+__S2                                                         (abs)        0000
+__S3                                                         (abs)        0000
+___int_sp                                                    stack        0000
+___latbits                                                   (abs)        0002
+___lldiv                                                     text22       09BB
+___lldiv@counter                                             cstackBANK0  002C
+___lldiv@dividend                                            cstackBANK0  0024
+___lldiv@divisor                                             cstackBANK0  0020
+___lldiv@quotient                                            cstackBANK0  0028
+___llmod                                                     text21       0920
+___llmod@counter                                             cstackCOMMON 0079
+___llmod@dividend                                            cstackCOMMON 0074
+___llmod@divisor                                             cstackCOMMON 0070
+___lmul                                                      text13       08E1
+___lmul@multiplicand                                         cstackCOMMON 0074
+___lmul@multiplier                                           cstackCOMMON 0070
+___lmul@product                                              cstackCOMMON 0079
+___sp                                                        stack        0000
+___wmul                                                      text11       17BC
+___wmul@multiplicand                                         cstackCOMMON 0072
+___wmul@multiplier                                           cstackCOMMON 0070
+___wmul@product                                              cstackCOMMON 0074
+__end_ofCur_Stage_Time_Proc@count_msg_disp                   strings      0820
+__end_ofCur_Stage_Time_Proc@motor_msg_disp                   strings      081C
+__end_ofCur_Stage_Time_Proc@time_msg_disp                    strings      0829
+__end_ofLCD_Const_Disp@reseveriour_msg_disp                  strings      0826
+__end_ofLCD_Const_Disp@vessel_msg_disp                       strings      0823
+__end_ofLCD_Const_Disp@vol_signal_rep_disp                   strings      0817
+__end_of_Cur_Stage_Time_Proc                                 text16       01F4
+__end_of_Cur_Stage_Time_Run_Proc                             text15       0DDC
+__end_of_Data_Num_Disp_LCD                                   text20       1000
+__end_of_Data_Str_Disp_LCD                                   text19       17BC
+__end_of_Delay_Time_ByCount                                  text9        176A
+__end_of_Encoded_To_Actual_Analog_Val_Calc                   text12       0D2F
+__end_of_Encoded_To_Percent_Calc                             text10       0C85
+__end_of_Goto_XY_LCD_Disp                                    text17       09BB
+__end_of_Init_ADC_Channel                                    text8        17A0
+__end_of_LCD_Const_Disp                                      text2        0BE0
+__end_of_LCD_Init                                            text14       08E1
+__end_of_Mix_Fsm_Proc                                        text3        07C3
+__end_of_Prescale_Timer1                                     text6        1800
+__end_of_Read_ADC_Channel                                    text7        0A81
+__end_of_Reset_Process                                       text1        08A3
+__end_of_Run_Timer1                                          text4        0120
+__end_of_Stop_Timer1                                         text5        1777
+__end_of_Write_LCD_Command                                   text18       0AEC
+__end_of_Write_LCD_Data                                      text23       0071
+__end_of___lldiv                                             text22       0A1B
+__end_of___llmod                                             text21       096C
+__end_of___lmul                                              text13       0920
+__end_of___wmul                                              text11       17DD
+__end_of__initialization                                     cinit        07FC
+__end_of__stringtab                                          strings      0806
+__end_of_main                                                maintext     0B5C
+__end_ofmain@motor_fwd_run_msg_disp                          strings      080E
+__end_ofmain@motor_off_msg_disp                              strings      0812
+__end_ofmain@motor_rev_run_msg_disp                          strings      080A
+__initialization                                             cinit        07C3
+__pbssBANK1                                                  bssBANK1     00DE
+__pbssBANK3                                                  bssBANK3     01BC
+__pcstackBANK0                                               cstackBANK0  0020
+__pcstackBANK1                                               cstackBANK1  00A0
+__pcstackCOMMON                                              cstackCOMMON 0070
+__pdataBANK0                                                 dataBANK0    0069
+__pdataBANK1                                                 dataBANK1    00EB
+__pdataBANK3                                                 dataBANK3    0190
+__pidataBANK0                                                idataBANK0   083A
+__pidataBANK1                                                idataBANK1   1751
+__pidataBANK3                                                idataBANK3   083E
+__pmaintext                                                  maintext     0AEC
+__pstrings                                                   strings      0800
+__ptext1                                                     text1        086A
+__ptext10                                                    text10       0BE0
+__ptext11                                                    text11       17BC
+__ptext12                                                    text12       0C85
+__ptext13                                                    text13       08E1
+__ptext14                                                    text14       08A3
+__ptext15                                                    text15       0D2F
+__ptext16                                                    text16       0120
+__ptext17                                                    text17       096C
+__ptext18                                                    text18       0A81
+__ptext19                                                    text19       17A0
+__ptext2                                                     text2        0B5C
+__ptext20                                                    text20       0DDC
+__ptext21                                                    text21       0920
+__ptext22                                                    text22       09BB
+__ptext23                                                    text23       0005
+__ptext3                                                     text3        01F4
+__ptext4                                                     text4        0071
+__ptext5                                                     text5        176A
+__ptext6                                                     text6        17DD
+__ptext7                                                     text7        0A1B
+__ptext8                                                     text8        1788
+__ptext9                                                     text9        175D
+__size_of_Cur_Stage_Time_Proc                                (abs)        0000
+__size_of_Cur_Stage_Time_Run_Proc                            (abs)        0000
+__size_of_Data_Num_Disp_LCD                                  (abs)        0000
+__size_of_Data_Str_Disp_LCD                                  (abs)        0000
+__size_of_Delay_Time_ByCount                                 (abs)        0000
+__size_of_Encoded_To_Actual_Analog_Val_Calc                  (abs)        0000
+__size_of_Encoded_To_Percent_Calc                            (abs)        0000
+__size_of_Goto_XY_LCD_Disp                                   (abs)        0000
+__size_of_Init_ADC_Channel                                   (abs)        0000
+__size_of_LCD_Const_Disp                                     (abs)        0000
+__size_of_LCD_Init                                           (abs)        0000
+__size_of_Mix_Fsm_Proc                                       (abs)        0000
+__size_of_Prescale_Timer1                                    (abs)        0000
+__size_of_Read_ADC_Channel                                   (abs)        0000
+__size_of_Reset_Process                                      (abs)        0000
+__size_of_Run_Timer1                                         (abs)        0000
+__size_of_Stop_Timer1                                        (abs)        0000
+__size_of_Write_LCD_Command                                  (abs)        0000
+__size_of_Write_LCD_Data                                     (abs)        0000
+__size_of___lldiv                                            (abs)        0000
+__size_of___llmod                                            (abs)        0000
+__size_of___lmul                                             (abs)        0000
+__size_of___wmul                                             (abs)        0000
+__size_of_main                                               (abs)        0000
+__stringbase                                                 strings      0805
+__stringtab                                                  strings      0800
+_count_left_vsl_fwd_rev_process                              bssBANK1     00E2
+_count_update_cur_stage_per_sec                              bssBANK3     01C2
+_cur_disp_lcd_loc                                            dataBANK0    0069
+_cur_line_disp_data                                          dataBANK3    01AA
+_cur_stage_time_enable_flag                                  dataBANK1    00ED
+_cur_stage_time_expiry_flag                                  dataBANK1    00EC
+_cur_stage_time_left                                         bssBANK1     00E4
+_disp_status_time_or_error                                   dataBANK3    01B4
+_main                                                        maintext     0AEC
+_mix_fsm_state                                               bssBANK1     00E6
+_mix_process_enable_flag                                     dataBANK1    00EB
+_num_calls_timer1                                            bssBANK3     01BC
+_prescale_shift_timer1                                       bssBANK3     01C4
+_prescale_timer1                                             dataBANK0    006B
+_restart_pressed_flag                                        bssBANK1     00EA
+_restart_sw_enable_flag                                      dataBANK1    00EE
+_timer1_init                                                 bssBANK1     00DE
+_timer1_mode                                                 bssBANK1     00E8
+_vsl_run_fsm_state                                           bssBANK3     01C0
+btemp                                                        (abs)        007E
+clear_ram0                                                   clrtext      1755
+end_of_initialization                                        cinit        07FC
+init_fetch0                                                  inittext     1777
+init_ram0                                                    inittext     177B
+intlevel0                                                    functab      0000
+intlevel1                                                    functab      0000
+intlevel2                                                    functab      0000
+intlevel3                                                    functab      0000
+intlevel4                                                    functab      0000
+intlevel5                                                    functab      0000
+reset_vec                                                    reset_vec    0000
+stackhi                                                      (abs)        0000
+stacklo                                                      (abs)        0000
+start                                                        init         0000
+start_initialization                                         cinit        07C3
+wtemp0                                                       (abs)        007E
+
+
+FUNCTION INFORMATION:
+
+ *************** function _main *****************
+ Defined at:
+		line 283 in file "adc7.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  analog_val_i    4    0        unsigned long 
+  analog_val_i    4    0        unsigned long 
+  analog_val_i    4    0        unsigned long 
+  analog_val_i    4    0        unsigned long 
+  percent_frac    2    0        unsigned int 
+  percent_int_    2    0        unsigned int 
+  percent_frac    2    0        unsigned int 
+  percent_int_    2    0        unsigned int 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       1       0       0       0
+      Totals:         0       1       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels required when called:    4
+ This function calls:
+		_Cur_Stage_Time_Run_Proc
+		_LCD_Const_Disp
+		_LCD_Init
+		_Mix_Fsm_Proc
+		_Reset_Process
+ This function is called by:
+		Startup code after reset
+ This function uses a non-reentrant model
+
+
+ *************** function _Reset_Process *****************
+ Defined at:
+		line 318 in file "adc7.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       1       0       0       0
+      Totals:         0       1       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_LCD_Const_Disp
+		_Stop_Timer1
+		_Write_LCD_Command
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _LCD_Const_Disp *****************
+ Defined at:
+		line 876 in file "adc7.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		_Data_Str_Disp_LCD
+		_Goto_XY_LCD_Disp
+		_Write_LCD_Data
+ This function is called by:
+		_main
+		_Reset_Process
+ This function uses a non-reentrant model
+
+
+ *************** function _Mix_Fsm_Proc *****************
+ Defined at:
+		line 349 in file "adc7.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  analog_val_i    4   52[BANK1 ] unsigned long 
+  analog_val_i    4   48[BANK1 ] unsigned long 
+  analog_val_i    4   44[BANK1 ] unsigned long 
+  analog_val_i    4   32[BANK1 ] unsigned long 
+  analog_val_i    4   28[BANK1 ] unsigned long 
+  analog_val_i    4   24[BANK1 ] unsigned long 
+  adc_value_vs    4   20[BANK1 ] unsigned long 
+  adc_value_vs    4   16[BANK1 ] unsigned long 
+  adc_value_vs    4   12[BANK1 ] unsigned long 
+  adc_value_rs    4    8[BANK1 ] unsigned long 
+  adc_value_rs    4    4[BANK1 ] unsigned long 
+  adc_value_rs    4    0[BANK1 ] unsigned long 
+  percent_int_    2   60[BANK1 ] unsigned int 
+  percent_int_    2   58[BANK1 ] unsigned int 
+  percent_int_    2   56[BANK1 ] unsigned int 
+  percent_frac    2   42[BANK1 ] unsigned int 
+  percent_frac    2   40[BANK1 ] unsigned int 
+  percent_frac    2   38[BANK1 ] unsigned int 
+  adc_channel     2   36[BANK1 ] unsigned int 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0      62       0       0
+      Temps:          0       2       0       0       0
+      Totals:         0       2      62       0       0
+Total ram usage:       64 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		_Data_Num_Disp_LCD
+		_Data_Str_Disp_LCD
+		_Delay_Time_ByCount
+		_Encoded_To_Actual_Analog_Val_Calc
+		_Encoded_To_Percent_Calc
+		_Goto_XY_LCD_Disp
+		_Read_ADC_Channel
+		_Run_Timer1
+		_Stop_Timer1
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _Run_Timer1 *****************
+ Defined at:
+		line 757 in file "adc7.c"
+ Parameters:    Size  Location     Type
+  set_timer1_m    2   13[BANK0 ] const unsigned int 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       2       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       8       0       0       0
+      Totals:         0      10       0       0       0
+Total ram usage:       10 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_Prescale_Timer1
+		_Stop_Timer1
+		___lldiv
+ This function is called by:
+		_Mix_Fsm_Proc
+ This function uses a non-reentrant model
+
+
+ *************** function _Stop_Timer1 *****************
+ Defined at:
+		line 796 in file "adc7.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_Reset_Process
+		_Mix_Fsm_Proc
+		_Run_Timer1
+ This function uses a non-reentrant model
+
+
+ *************** function _Prescale_Timer1 *****************
+ Defined at:
+		line 817 in file "adc7.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          3       0       0       0       0
+      Totals:         3       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_Run_Timer1
+ This function uses a non-reentrant model
+
+
+ *************** function _Read_ADC_Channel *****************
+ Defined at:
+		line 668 in file "adc7.c"
+ Parameters:    Size  Location     Type
+  adc_channel     2    6[COMMON] unsigned int 
+ Auto vars:     Size  Location     Type
+  adc_value_ch    4    2[BANK0 ] unsigned long 
+  adc_value_le    2    6[BANK0 ] unsigned int 
+  adc_value_mo    2    0[BANK0 ] unsigned int 
+ Return value:  Size  Location     Type
+                  4    6[COMMON] unsigned long 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         4       0       0       0       0
+      Locals:         0       8       0       0       0
+      Temps:          2       0       0       0       0
+      Totals:         6       8       0       0       0
+Total ram usage:       14 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_Delay_Time_ByCount
+		_Init_ADC_Channel
+ This function is called by:
+		_Mix_Fsm_Proc
+ This function uses a non-reentrant model
+
+
+ *************** function _Init_ADC_Channel *****************
+ Defined at:
+		line 660 in file "adc7.c"
+ Parameters:    Size  Location     Type
+  adc_channel     2    0[COMMON] const unsigned int 
+ Auto vars:     Size  Location     Type
+  adc_channel_    2    4[COMMON] unsigned int 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         2       0       0       0       0
+      Locals:         2       0       0       0       0
+      Temps:          2       0       0       0       0
+      Totals:         6       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_Read_ADC_Channel
+ This function uses a non-reentrant model
+
+
+ *************** function _Delay_Time_ByCount *****************
+ Defined at:
+		line 1023 in file "adc7.c"
+ Parameters:    Size  Location     Type
+  time_delay      2    0[COMMON] unsigned int 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         2       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         2       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_Mix_Fsm_Proc
+		_Read_ADC_Channel
+ This function uses a non-reentrant model
+
+
+ *************** function _Encoded_To_Percent_Calc *****************
+ Defined at:
+		line 735 in file "adc7.c"
+ Parameters:    Size  Location     Type
+  adc_value       4   13[BANK0 ] const unsigned long 
+  percent_int     1   17[BANK0 ] const PTR unsigned int 
+		 -> Mix_Fsm_Proc@percent_int_rsvwater_ch(2), Mix_Fsm_Proc@percent_int_rsvsand_ch(2), Mix_Fsm_Proc@percent_int_rsvcmt_ch(2), 
+  percent_frac    1   18[BANK0 ] const PTR unsigned int 
+		 -> Mix_Fsm_Proc@percent_frac_rsvwater_ch(2), Mix_Fsm_Proc@percent_frac_rsvsand_ch(2), Mix_Fsm_Proc@percent_frac_rsvcmt_ch(2), 
+ Auto vars:     Size  Location     Type
+  temp_percent    4   23[BANK0 ] unsigned long 
+  remainder_va    2   27[BANK0 ] unsigned int 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       6       0       0       0
+      Locals:         0       6       0       0       0
+      Temps:          0       4       0       0       0
+      Totals:         0      16       0       0       0
+Total ram usage:       16 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		___lldiv
+		___llmod
+		___lmul
+		___wmul
+ This function is called by:
+		_Mix_Fsm_Proc
+ This function uses a non-reentrant model
+
+
+ *************** function ___wmul *****************
+ Defined at:
+		line 15 in file "C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c"
+ Parameters:    Size  Location     Type
+  multiplier      2    0[COMMON] unsigned int 
+  multiplicand    2    2[COMMON] unsigned int 
+ Auto vars:     Size  Location     Type
+  product         2    4[COMMON] unsigned int 
+ Return value:  Size  Location     Type
+                  2    0[COMMON] unsigned int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         4       0       0       0       0
+      Locals:         2       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         6       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_Encoded_To_Percent_Calc
+ This function uses a non-reentrant model
+
+
+ *************** function _Encoded_To_Actual_Analog_Val_Calc *****************
+ Defined at:
+		line 714 in file "adc7.c"
+ Parameters:    Size  Location     Type
+  adc_value       4    0[BANK0 ] const unsigned long 
+  full_scale_i    4    4[BANK0 ] const unsigned long 
+  min_input_an    2    8[BANK0 ] const unsigned int 
+  analog_val_i    1   10[BANK0 ] const PTR unsigned long 
+		 -> Mix_Fsm_Proc@analog_val_in_digital_int_vslwater_ch(4), Mix_Fsm_Proc@analog_val_in_digital_int_vslsand_ch(4), Mix_Fsm_Proc@analog_val_in_digital_int_vslcmt_ch(4), 
+  analog_val_i    1   11[BANK0 ] const PTR unsigned long 
+		 -> Mix_Fsm_Proc@analog_val_in_digital_frac_vslwater_ch(4), Mix_Fsm_Proc@analog_val_in_digital_frac_vslsand_ch(4), Mix_Fsm_Proc@analog_val_in_digital_frac_vslcmt_ch(4), 
+ Auto vars:     Size  Location     Type
+  remainder_va    4   20[BANK0 ] unsigned long 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0      12       0       0       0
+      Locals:         0       4       0       0       0
+      Temps:          0       8       0       0       0
+      Totals:         0      24       0       0       0
+Total ram usage:       24 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		___lmul
+ This function is called by:
+		_Mix_Fsm_Proc
+ This function uses a non-reentrant model
+
+
+ *************** function ___lmul *****************
+ Defined at:
+		line 15 in file "C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul32.c"
+ Parameters:    Size  Location     Type
+  multiplier      4    0[COMMON] unsigned long 
+  multiplicand    4    4[COMMON] unsigned long 
+ Auto vars:     Size  Location     Type
+  product         4    9[COMMON] unsigned long 
+ Return value:  Size  Location     Type
+                  4    0[COMMON] unsigned long 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         8       0       0       0       0
+      Locals:         4       0       0       0       0
+      Temps:          1       0       0       0       0
+      Totals:        13       0       0       0       0
+Total ram usage:       13 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_Encoded_To_Actual_Analog_Val_Calc
+		_Encoded_To_Percent_Calc
+ This function uses a non-reentrant model
+
+
+ *************** function _LCD_Init *****************
+ Defined at:
+		line 915 in file "adc7.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_Write_LCD_Command
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _Cur_Stage_Time_Run_Proc *****************
+ Defined at:
+		line 583 in file "adc7.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       8       0       0       0
+      Totals:         0       8       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_Cur_Stage_Time_Proc
+		___lldiv
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _Cur_Stage_Time_Proc *****************
+ Defined at:
+		line 612 in file "adc7.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       1       0       0       0
+      Totals:         0       1       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		_Data_Num_Disp_LCD
+		_Data_Str_Disp_LCD
+		_Goto_XY_LCD_Disp
+ This function is called by:
+		_Cur_Stage_Time_Run_Proc
+ This function uses a non-reentrant model
+
+
+ *************** function _Goto_XY_LCD_Disp *****************
+ Defined at:
+		line 843 in file "adc7.c"
+ Parameters:    Size  Location     Type
+  start_line_n    2   10[COMMON] const unsigned int 
+  start_col_nu    2   12[COMMON] const unsigned int 
+ Auto vars:     Size  Location     Type
+  start_col_lc    2    2[BANK0 ] unsigned int 
+  start_line_l    2    0[BANK0 ] unsigned int 
+  error_disp_s    2    0        unsigned int 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         4       0       0       0       0
+      Locals:         0       4       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         4       4       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_Write_LCD_Command
+ This function is called by:
+		_Mix_Fsm_Proc
+		_Cur_Stage_Time_Proc
+		_LCD_Const_Disp
+ This function uses a non-reentrant model
+
+
+ *************** function _Write_LCD_Command *****************
+ Defined at:
+		line 940 in file "adc7.c"
+ Parameters:    Size  Location     Type
+  cmd             2    0[COMMON] unsigned int 
+ Auto vars:     Size  Location     Type
+  time_delay      4    6[COMMON] unsigned long 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         2       0       0       0       0
+      Locals:         4       0       0       0       0
+      Temps:          4       0       0       0       0
+      Totals:        10       0       0       0       0
+Total ram usage:       10 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_Reset_Process
+		_Goto_XY_LCD_Disp
+		_LCD_Init
+ This function uses a non-reentrant model
+
+
+ *************** function _Data_Str_Disp_LCD *****************
+ Defined at:
+		line 1002 in file "adc7.c"
+ Parameters:    Size  Location     Type
+  char_ptr        1    wreg     PTR const unsigned char 
+		 -> LCD_Const_Disp@vol_signal_rep_disp(5), LCD_Const_Disp@vessel_msg_disp(3), STR_5(2), LCD_Const_Disp@reseveriour_msg_disp(3), 
+		 -> Cur_Stage_Time_Proc@motor_msg_disp(5), Cur_Stage_Time_Proc@count_msg_disp(4), Cur_Stage_Time_Proc@time_msg_disp(3), STR_4(3), 
+		 -> STR_3(3), STR_2(3), STR_1(3), 
+ Auto vars:     Size  Location     Type
+  char_ptr        1   10[COMMON] PTR const unsigned char 
+		 -> LCD_Const_Disp@vol_signal_rep_disp(5), LCD_Const_Disp@vessel_msg_disp(3), STR_5(2), LCD_Const_Disp@reseveriour_msg_disp(3), 
+		 -> Cur_Stage_Time_Proc@motor_msg_disp(5), Cur_Stage_Time_Proc@count_msg_disp(4), Cur_Stage_Time_Proc@time_msg_disp(3), STR_4(3), 
+		 -> STR_3(3), STR_2(3), STR_1(3), 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         1       0       0       0       0
+      Temps:          1       0       0       0       0
+      Totals:         2       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_Write_LCD_Data
+ This function is called by:
+		_Mix_Fsm_Proc
+		_Cur_Stage_Time_Proc
+		_LCD_Const_Disp
+ This function uses a non-reentrant model
+
+
+ *************** function _Data_Num_Disp_LCD *****************
+ Defined at:
+		line 1040 in file "adc7.c"
+ Parameters:    Size  Location     Type
+  lcd_datanum_    2   13[BANK0 ] const unsigned int 
+  lcd_disp_dat    4   15[BANK0 ] const unsigned long 
+ Auto vars:     Size  Location     Type
+  hex_data       16   23[BANK0 ] unsigned char [16]
+  num_data       10   39[BANK0 ] unsigned char [10]
+  num             4   59[BANK0 ] unsigned long 
+  unit_digit      2   57[BANK0 ] unsigned int 
+  tens_digit      2   55[BANK0 ] unsigned int 
+  hundreds_dig    2   53[BANK0 ] unsigned int 
+  thousands_di    2   51[BANK0 ] unsigned int 
+  tens_thousan    2   49[BANK0 ] unsigned int 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       6       0       0       0
+      Locals:         0      40       0       0       0
+      Temps:          0       4       0       0       0
+      Totals:         0      50       0       0       0
+Total ram usage:       50 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_Write_LCD_Data
+		___lldiv
+		___llmod
+ This function is called by:
+		_Mix_Fsm_Proc
+		_Cur_Stage_Time_Proc
+ This function uses a non-reentrant model
+
+
+ *************** function ___llmod *****************
+ Defined at:
+		line 6 in file "C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\llmod.c"
+ Parameters:    Size  Location     Type
+  divisor         4    0[COMMON] unsigned long 
+  dividend        4    4[COMMON] unsigned long 
+ Auto vars:     Size  Location     Type
+  counter         1    9[COMMON] unsigned char 
+ Return value:  Size  Location     Type
+                  4    0[COMMON] unsigned long 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         8       0       0       0       0
+      Locals:         1       0       0       0       0
+      Temps:          1       0       0       0       0
+      Totals:        10       0       0       0       0
+Total ram usage:       10 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_Encoded_To_Percent_Calc
+		_Data_Num_Disp_LCD
+ This function uses a non-reentrant model
+
+
+ *************** function ___lldiv *****************
+ Defined at:
+		line 6 in file "C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\lldiv.c"
+ Parameters:    Size  Location     Type
+  divisor         4    0[BANK0 ] unsigned long 
+  dividend        4    4[BANK0 ] unsigned long 
+ Auto vars:     Size  Location     Type
+  quotient        4    8[BANK0 ] unsigned long 
+  counter         1   12[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  4    0[BANK0 ] unsigned long 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       8       0       0       0
+      Locals:         0       5       0       0       0
+      Temps:          1       0       0       0       0
+      Totals:         1      13       0       0       0
+Total ram usage:       14 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_Cur_Stage_Time_Run_Proc
+		_Encoded_To_Percent_Calc
+		_Run_Timer1
+		_Data_Num_Disp_LCD
+ This function uses a non-reentrant model
+
+
+ *************** function _Write_LCD_Data *****************
+ Defined at:
+		line 969 in file "adc7.c"
+ Parameters:    Size  Location     Type
+  ch              1    wreg     const unsigned char 
+ Auto vars:     Size  Location     Type
+  ch              1    4[COMMON] const unsigned char 
+  time_delay      4    5[COMMON] unsigned long 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         5       0       0       0       0
+      Temps:          4       0       0       0       0
+      Totals:         9       0       0       0       0
+Total ram usage:        9 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_LCD_Const_Disp
+		_Data_Str_Disp_LCD
+		_Data_Num_Disp_LCD
+ This function uses a non-reentrant model
+
+
+
+MODULE INFORMATION
+
+Module		Function		Class		Link	Load	Size
+C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\llmod.c
+		___llmod       		CODE           	0920	0000	77
+
+C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\llmod.c estimated size: 77
+
+C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\lldiv.c
+		___lldiv       		CODE           	09BB	0000	97
+
+C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\lldiv.c estimated size: 97
+
+C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
+		___wmul        		CODE           	17BC	0000	34
+
+C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c estimated size: 34
+
+shared
+		LCD_Const_Disp@vol_signal_rep_disp		STRING         	0812	0000	6
+		Cur_Stage_Time_Proc@count_msg_disp		STRING         	081C	0000	5
+		__stringtab    		STRING         	0800	0000	7
+		LCD_Const_Disp@reseveriour_msg_disp		STRING         	0823	0000	4
+		Cur_Stage_Time_Proc@motor_msg_disp		STRING         	0817	0000	6
+		main@motor_off_msg_disp		STRING         	0000	0000	0
+		Cur_Stage_Time_Proc@time_msg_disp		STRING         	0826	0000	4
+		__initialization		CODE           	07C3	0000	58
+		LCD_Const_Disp@vessel_msg_disp		STRING         	0820	0000	4
+		main@motor_fwd_run_msg_disp		STRING         	0000	0000	0
+		main@motor_rev_run_msg_disp		STRING         	0000	0000	0
+
+shared estimated size: 94
+
+adc7.c
+		_LCD_Init      		CODE           	08A3	0000	63
+		_Delay_Time_ByCount		CODE           	175D	0000	14
+		_LCD_Const_Disp		CODE           	0B5C	0000	133
+		_Cur_Stage_Time_Proc		CODE           	0120	0000	213
+		_Mix_Fsm_Proc  		CODE           	01F4	0000	1488
+		_Encoded_To_Percent_Calc		CODE           	0BE0	0000	166
+		_main          		CODE           	0AEC	0000	113
+		_Init_ADC_Channel		CODE           	1788	0000	25
+		_Stop_Timer1   		CODE           	176A	0000	14
+		_Data_Num_Disp_LCD		CODE           	0DDC	0000	549
+		_Data_Str_Disp_LCD		CODE           	17A0	0000	29
+		_Write_LCD_Command		CODE           	0A81	0000	108
+		_Read_ADC_Channel		CODE           	0A1B	0000	103
+		_Write_LCD_Data		CODE           	0005	0000	109
+		_Reset_Process 		CODE           	086A	0000	58
+		_Encoded_To_Actual_Analog_Val_Calc		CODE           	0C85	0000	171
+		_Prescale_Timer1		CODE           	17DD	0000	36
+		_Goto_XY_LCD_Disp		CODE           	096C	0000	80
+		_Cur_Stage_Time_Run_Proc		CODE           	0D2F	0000	174
+		_Run_Timer1    		CODE           	0071	0000	176
+
+adc7.c estimated size: 3822
+
+C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul32.c
+		___lmul        		CODE           	08E1	0000	64
+
+C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul32.c estimated size: 64
+
